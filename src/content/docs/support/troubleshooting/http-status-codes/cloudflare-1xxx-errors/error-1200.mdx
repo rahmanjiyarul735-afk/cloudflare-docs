@@ -1,4 +1,27 @@
+-----
+title: Error 1200 · Cloudflare Support docs
+description: This error indicates that the number of requests queued on
+  Cloudflare's edge exceeds the limit.
+lastUpdated: 2025-05-14T13:30:35.000Z
+chatbotDeprioritize: false
+source_url:
+  html: https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1200/
+  md: https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1200/index.md
 ---
+
+## Error 1200: Cache connection limit
+
+This error indicates that the number of requests queued on Cloudflare's edge exceeds the limit.
+
+### Common cause
+
+There are too many requests queued on Cloudflare's edge that are awaiting process by your origin web server. This limit protects Cloudflare's systems.
+
+### Resolution
+
+Tune your origin webserver to accept incoming connections faster. Adjust your caching settings to improve cache-hit rates so that fewer requests reach your origin web server. Reach out to your hosting provider or web administrator for assistance.
+
+-
 pcx_content_type: troubleshooting
 title: Error 1200
 source: null
